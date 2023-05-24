@@ -1,0 +1,40 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+h1{
+    color: white;
+}
+
+section{
+    margin-top: 4rem;
+    display: flex;
+    width: 700px;
+    height: 500px;
+}
+
+section img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s ease-in-out;
+}
+
+section img:hover{
+    cursor: pointer;
+    width: 200px;
+    opacity: 1;
+    box-shadow: 5px 5px orange;
+    padding: 20px;
+    filter: blur(1px);
+}
